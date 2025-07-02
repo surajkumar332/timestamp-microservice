@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <style>
+        p {
+            font-size: 30px;
+        }
+
+        h3 {
+            font-size: 40px;
+        }
+
+        dd {
+            text-align: right;
+        }
+
+        input {
+            width: 60vw;
+        }
+        #small{
+            width: 15vw;
+        }
+        #large{
+            width: 45vw;
+        }
+        button{
+            position: relative;
+            left: 60vw;
+            font-size: 30px;
+            
+        }
+        button:hover{
+            border-radius: 5px;
+            background-color: rgb(30, 30, 195);
+        }
+    </style>
+</head>
+
+<body>
+    <form action="abc.php">
+        <p>Personal</p>
+        <hr>
+        <dl>
+            <dt>
+                <h3>General Data</h3>
+            </dt>
+            <dd>
+                <label for="first name">FIRST NAME:</label>
+                <input type="text" name="first name" required><br><br>
+                <label for="last name">LAST NAME:</label>
+                <input form="text" name="last name" required><br><br>
+                <label for="dob">DATE OF BIRTH:</label>
+                <input type="text" name="dob" required><br><br>
+                <label for="email">EMAIL:</label>
+                <input type="email" name="email" required><br><br>
+            </dd>
+        </dl>
+        <dl>
+            <dt><h3>Address</h3></dt>
+            <dd>
+            <label for="Zip Code / City"> Zip Code / City</label>
+            <input type="text" id="small">
+            <input type="text" id="large"><br><br>
+            </dd>
+            <dd>
+            <label for="Street / Number">Street / Number</label>
+            <input type="text" id="large">
+            <input type="text" id="small">
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <h3>Additional Information</h3>
+            </dt>
+            <dd>
+                <label for="number">Number</label>
+                <input type="text"><br><br>
+                <label for="fax">FAX</label>
+                <input type="text">
+            </dd>
+        </dl>
+        <hr>
+        <button id="cr">Create</button>
+        <button>Cancle</button>
+    </form>
+</body>
+
+</html>
